@@ -32,24 +32,24 @@ See [documentation of Spark](https://spark.apache.org/docs/latest/submitting-app
 ### Parameters of the recommender
 
 * Setting up API
-     * --interface  <arg>: Interface for setting up API (default = localhost)
-     * --port  <arg>: Port of interface for setting up API (default = 8080)
+     * `--interface  <arg>` Interface for setting up API (default = localhost)
+     * `--port  <arg>` Port of interface for setting up API (default = 8080)
 * Setting the dataset
-     * --data  <arg>: Type of dataset
-     * --dir  <arg>: Directory containing files of dataset
+     * `--data  <arg>` Type of dataset
+     * `--dir  <arg>` Directory containing files of dataset
      
      Supported datasets: movieLens, netflix, netflixInManyFiles
 
 * Setting the algorithm
-     * --method  <arg>: Algorithm
-     * -pkey=value \[key=value\]...: Parameters for algorithm
+     * `--method  <arg>` Algorithm
+     * `-pkey=value \[key=value\]...` Parameters for algorithm
      
      Provided algorithms: kNN, kMeansClusteredKnn, clusterTreeKnn, als
 
 * Other
-     * --products  <arg>: Maximal number of recommended products (default = 10)
-     * --help: Shows help
-     * --version: Shows version
+     * `--products  <arg>` Maximal number of recommended products (default = 10)
+     * `--help` Shows help
+     * `--version` Shows version
      
 See the documentation for parameters of a particular algorithm.
 
