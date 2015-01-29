@@ -59,6 +59,18 @@ See the documentation for parameters of a particular algorithm.
     --data movieLens --dir /mnt/share/movieLens/ \
     --method kNN -p numberOfNeighbors=5
 
+For simplification there's `example-run` script which sets some defaults. When running with netflix
+datasets it expects to have following files located in `--dir`:
+
+  * `ratings.txt`
+  * `movie_titles.txt`
+
+```
+./example-run --data netflix --dir /mnt/share/datasets/netflix \
+ --method kNN -p numberOfNeighbors=5 --port 9090
+
+```
+
 ## API
 
 ### Request
