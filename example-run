@@ -1,0 +1,5 @@
+#!/bin/bash
+RCM_PATH="$(pwd)/target/scala-2.10/SparkRecommender-assembly-0.1.jar"
+LIB_PATH="$(pwd)/lib/"
+/usr/bin/spark-submit --driver-memory 2G --executor-memory 6G \
+  --driver-class-path $LIB_PATH --class Boot $RCM_PATH $@

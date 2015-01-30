@@ -8,9 +8,9 @@ mainClass in Compile := Some("Boot")
 libraryDependencies += "org.rogach" %% "scallop" % "0.9.5"
 
 //Spark
-libraryDependencies += "org.apache.spark" %% "spark-core" % "1.0.2" % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-core" % "1.2.0" % "provided"
 
-libraryDependencies += "org.apache.spark" % "spark-mllib_2.10" % "1.0.2" % "provided"
+libraryDependencies += "org.apache.spark" % "spark-mllib_2.10" % "1.2.0" % "provided"
 
 resolvers += "Akka Repository" at "http://repo.akka.io/releases/"
 
